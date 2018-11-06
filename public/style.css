@@ -1,0 +1,53 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.textarea-container div {
+  flex: 1;
+  height: calc(100% - 10em);
+}
+
+textarea {
+  font-size: 20px;
+  height: 100%;
+  width: 98%;
+  margin: 3px;
+  resize: none;
+  padding: 10px;
+}
+
+textarea#input-text {
+  resize: none;
+}
+
+textarea#yeetext {
+  font-family: monospace;
+}
+
+@media screen and (max-width: 500px) {
+  .textarea-container {
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .textarea-container div {
+    width: 100%;
+    margin: 5px;
+    height: calc(100% - 25em);
+  }
+
+  button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+  }
+}

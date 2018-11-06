@@ -1,0 +1,31 @@
+{
+  "name": "yeetext",
+  "version": "1.0.0",
+  "description": "Just another text transforming site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffbdye/YeeText.git"
+  },
+  "author": "Jeff Dye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffbdye/YeeText/issues"
+  },
+  "homepage": "https://github.com/jeffbdye/YeeText#readme",
+  "devDependencies": {
+    "@types/node": "10.12.2",
+    "ts-loader": "5.3.0",
+    "typescript": "3.1.6",
+    "webpack": "4.24.0",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10"
+  },
+  "dependencies": {
+    "copy-to-clipboard": "3.0.8"
+  }
+}
