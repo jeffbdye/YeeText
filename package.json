@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jeffbdye/YeeText#readme",
   "devDependencies": {
+    "@types/express": "^4.16.0",
     "@types/node": "10.12.2",
     "ts-loader": "5.3.0",
     "typescript": "3.1.6",

@@ -4,6 +4,13 @@ var express = require('express');
 
 const app = express();
 
+// require https
+app.get('*', (req, res) => {
+  if (req.protocol === 'http'){
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  }
+});
+
 var staticPath = path.join(__dirname, 'public');
 app.use(serveStatic(staticPath, {'index': ['index.html']}));
 
