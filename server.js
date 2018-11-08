@@ -5,8 +5,10 @@ var express = require('express');
 const app = express();
 
 // require https
-app.get('*', (req, res) => {
-  if (req.protocol === 'http'){
+app.get('*', (req, res, next) => {
+  if (req.secure) {
+    return next();
+  } else {
     res.redirect(`https://${req.headers.host}${req.url}`);
   }
 });
