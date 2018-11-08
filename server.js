@@ -1,17 +1,12 @@
 var path = require('path');
 var serveStatic = require('serve-static')
 var express = require('express');
+var enforce = require('express-sslify');
 
 const app = express();
 
 // require https
-app.get('*', (req, res, next) => {
-  if (req.secure) {
-    return next();
-  } else {
-    res.redirect(`https://${req.headers.host}${req.url}`);
-  }
-});
+app.use(enforce.HTTPS());
 
 var staticPath = path.join(__dirname, 'public');
 app.use(serveStatic(staticPath, {'index': ['index.html']}));
