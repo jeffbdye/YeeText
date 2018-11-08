@@ -29,7 +29,6 @@
   "dependencies": {
     "copy-to-clipboard": "3.0.8",
     "express": "4.16.4",
-    "express-sslify": "1.2.0",
     "serve-static": "1.13.2"
   }
 }
