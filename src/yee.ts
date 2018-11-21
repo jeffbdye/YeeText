@@ -9,3 +9,18 @@ export function clap(text: string): string {
   output += words[words.length - 1];
   return output;
 }
+
+export function alternate(text: string): string {
+  const chars = text.trim().split('');
+  if (!chars.length) {
+    return '';
+  }
+
+  let output = '';
+  let upper = chars[0] === chars[0].toUpperCase();
+  for (var i = 0; i < chars.length; i++) {
+    output += upper ? chars[i].toUpperCase() : chars[i].toLowerCase();
+    upper = !upper;
+  }
+  return output;
+}

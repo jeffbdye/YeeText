@@ -14,10 +14,10 @@ app.get('*', (req, res, next) => {
 });
 
 var staticPath = path.join(__dirname, 'public');
-app.use(serveStatic(staticPath, {'index': ['index.html']}));
+app.use(serveStatic(staticPath, { 'index': ['index.html'] }));
 
 var server = app.listen(process.env.PORT || 3000, () => {
-    console.log(`serving ${staticPath} on port ${server.address().port}`);
+  console.log(`serving ${staticPath} on port ${server.address().port}`);
 });
 
 module.exports = app;

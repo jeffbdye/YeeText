@@ -23,6 +23,12 @@ textarea {
   padding: 10px;
 }
 
+.form-group {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 textarea#input-text {
   resize: none;
 }
