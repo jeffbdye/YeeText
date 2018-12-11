@@ -26,8 +26,8 @@ textarea {
 .form-group {
   display: flex;
   align-items: center;
-  margin-left: .2em;
-  margin-right: .2em;
+  margin-left: .4em;
+  margin-right: .4em;
 }
 
 textarea#input-text {
