@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: .4em;
 }
 
 .textarea-container div {
@@ -15,22 +15,36 @@
 }
 
 textarea {
-  font-size: 20px;
+  font-size: 1.25em;
   height: 100%;
   width: 98%;
   margin: 3px;
   resize: none;
-  padding: 10px;
+  padding: .1em;
 }
 
 .form-group {
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
+  align-items: center;
+  margin-left: .4em;
+  margin-right: .4em;
 }
 
 textarea#input-text {
   resize: none;
+}
+
+button {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  transition: color .15s;
+}
+
+button:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
 }
 
 @media screen and (max-width: 500px) {
@@ -41,8 +55,8 @@ textarea#input-text {
 
   .textarea-container div {
     width: 100%;
-    margin: 5px;
-    height: calc(100% - 25em);
+    margin: .1em;
+    height: calc(100% - 26em);
   }
 
   button {

@@ -19,8 +19,12 @@ export function alternate(text: string): string {
   let output = '';
   let upper = chars[0] === chars[0].toUpperCase();
   for (var i = 0; i < chars.length; i++) {
-    output += upper ? chars[i].toUpperCase() : chars[i].toLowerCase();
-    upper = !upper;
+    if (/[a-zA-z]/.test(chars[i])) {
+      output += upper ? chars[i].toUpperCase() : chars[i].toLowerCase();
+      upper = !upper;
+    } else {
+      output += chars[i];
+    }
   }
   return output;
 }
