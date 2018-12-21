@@ -5,7 +5,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/
       }
@@ -16,12 +16,13 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.join(__dirname, 'public')
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 9000
   },
+  devtool: 'source-map',
   mode: 'production'
 };
