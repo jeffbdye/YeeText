@@ -1,6 +1,6 @@
 const clap_char = '\u{1F44F}';
 
-export function clap(text: string): string {
+function clap(text: string): string {
   const words = text.trim().split(' ');
   let output = '';
   for (var i = 0; i < words.length - 1; i++) {
@@ -10,7 +10,7 @@ export function clap(text: string): string {
   return output;
 }
 
-export function alternate(text: string): string {
+function alternate(text: string): string {
   const chars = text.trim().split('');
   if (!chars.length) {
     return '';
@@ -28,3 +28,5 @@ export function alternate(text: string): string {
   }
   return output;
 }
+
+export { alternate, clap };

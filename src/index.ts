@@ -31,10 +31,4 @@ function getCheckboxValue(elementId: string): boolean {
   return (document.getElementById(elementId) as HTMLInputElement).checked;
 }
 
-if (typeof window !== 'undefined') {
-  Object.assign(window, {
-    yeet: yeet,
-    copyClicked: copyClicked,
-    optionToggled: optionToggled
-  });
-}
+export { yeet, copyClicked, optionToggled };
