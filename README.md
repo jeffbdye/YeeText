@@ -1,6 +1,3 @@
 # YeeText
 Just another text transforming site.
-
-# To build
-- Make changes
-- `npx webpack --config webpack.config.js`
+See the site is hosted at yeetext(d0t)net.
