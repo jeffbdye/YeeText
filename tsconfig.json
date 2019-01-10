@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./public/",
-    "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
     "lib": [
-      "es2015", "es2017", "dom"
+      "es2015",
+      "es2017",
+      "dom"
     ],
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "allowJs": true
-  }
+    "allowJs": true,
+    "noImplicitAny": true
+  },
+  "exclude": [
+    "webpack.config.js"
+  ]
 }
