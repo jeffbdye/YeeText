@@ -1,9 +1,8 @@
 pipeline {
 
     agent {
-        docker {
-            image 'node'
-            args '-u root'
+        node {
+            label 'YeeText'
         }
     }
 
