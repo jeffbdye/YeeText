@@ -1,5 +1,10 @@
-pipeline {
-    agent any
+pipeline {    
+    agent {
+        docker {
+            image 'node'
+            args '-u root'
+        }
+    }
     stages {
         stage('Build') {
             steps {
@@ -10,6 +15,7 @@ pipeline {
         stage('Test') {
            steps {
                echo 'Testing...'
+               create working directory
                sh 'npm run build:test'
                sh 'npm run test'
            }
@@ -23,12 +29,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // slot swap 
-                //  - move existing to secondary slot folder, copy compiled assets to live directory
-                // todo: swap back from secondary slot/folder in case of failure
-                sh 'mv /var/www/yeetext.net/public /var/www/yeetext.net/.secondary'
-                sh 'cp /var/lib/jenkins/workspace/YeeText/public /var/www/yeetext.net/public/'
-                sh 'rm -r /var/www/yeetext.net/.secondary'
+                sh 'docker cp /var/lib/jenkins/workspace/YeeText/public /var/www/yeetext.net/public/'
             }
         }
     }
