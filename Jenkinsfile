@@ -1,11 +1,5 @@
 pipeline {
-
-    agent {
-        node {
-            label 'YeeText'
-        }
-    }
-
+    agent any
     stages {
         stage('Build') {
             steps {
