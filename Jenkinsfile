@@ -15,7 +15,6 @@ pipeline {
         stage('Test') {
            steps {
                echo 'Testing...'
-               create working directory
                sh 'npm run build:test'
                sh 'npm run test'
            }
