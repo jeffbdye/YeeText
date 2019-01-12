@@ -1,4 +1,12 @@
 pipeline {
+
+    agent {
+        docker {
+            image 'node'
+            args '-u root'
+        }
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -9,7 +17,6 @@ pipeline {
         stage('Test') {
            steps {
                echo 'Testing...'
-               create working directory
                sh 'npm run build:test'
                sh 'npm run test'
            }
