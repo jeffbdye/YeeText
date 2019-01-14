@@ -23,12 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // slot swap 
-                //  - move existing to secondary slot folder, copy compiled assets to live directory
-                // todo: swap back from secondary slot/folder in case of failure
-                sh 'mv /var/www/yeetext.net/public /var/www/yeetext.net/.secondary'
-                sh 'cp /var/lib/jenkins/workspace/YeeText/public /var/www/yeetext.net/public/'
-                sh 'rm -r /var/www/yeetext.net/.secondary'
+                sh 'bash sh/deploy.sh'
             }
         }
     }
