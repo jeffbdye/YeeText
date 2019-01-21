@@ -26,8 +26,17 @@ textarea {
 .form-group {
   display: flex;
   align-items: center;
-  margin-left: .4em;
-  margin-right: .4em;
+  padding-left: .4em;
+  padding-right: .4em;
+}
+
+.bordered {
+  border-left: 1px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-color: lightslategrey;
+  border-style: solid;
 }
 
 textarea#input-text {
