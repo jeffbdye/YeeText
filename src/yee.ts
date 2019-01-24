@@ -29,4 +29,19 @@ function alternate(text: string): string {
   return output;
 }
 
-export { alternate, clap };
+function titleCase(text: string) {
+  const words = text.trim().split(' ');
+  if (!words.length) {
+    return '';
+  }
+
+  let output = '';
+  for (let word of words) {
+    let titleCased = word[0].toUpperCase() + word.substring(1).toLowerCase();
+    output += titleCased + ' ';
+  }
+
+  return output.slice(0, -1);
+}
+
+export { alternate, clap, titleCase };

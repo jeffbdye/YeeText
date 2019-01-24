@@ -1,4 +1,4 @@
-import { clap, alternate } from './yee';
+import { clap, alternate, titleCase } from './yee';
 import copy from 'copy-to-clipboard';
 
 const inputElement = document.getElementById('input-text') as HTMLTextAreaElement;
@@ -14,20 +14,25 @@ function yeet(value: string) {
 
 function optionToggled(e: Event) {
   validateForm(e);
-  applyStyles();
   yeet(inputElement.value);
 }
 
 function yeetThatText(text: string) {
   const yeetSelected = yeetElement.checked;
   const alternateSelected = alertnatingElement.checked;
+  const jalenSelected = jalenElement.checked;
 
-  if (yeetSelected && alternateSelected) {
-    return alternate(clap(text));
+  // ugh
+  if (alternateSelected && yeetSelected) {
+    return clap(alternate(text));
+  } else if (jalenSelected && yeetSelected) {
+    return clap(titleCase(text));
   } else if (yeetSelected) {
     return clap(text);
   } else if (alternateSelected) {
     return alternate(text);
+  } else if (jalenSelected) {
+    return titleCase(text);
   } else {
     return text;
   }
@@ -41,11 +46,6 @@ function validateForm(e: Event) {
   } else if (e.srcElement.id === 'Jalen-Smith') {
     alertnatingElement.checked = false;
   }
-}
-
-function applyStyles() {
-  const jalenSelected = jalenElement.checked;
-  resultElement.style.textTransform = jalenSelected ? 'capitalize' : '';
 }
 
 function copyClicked() {
