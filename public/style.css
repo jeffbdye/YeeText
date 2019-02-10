@@ -6,28 +6,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: .4em;
+  margin-bottom: 5px;
 }
 
 .textarea-container div {
   flex: 1;
-  height: calc(100% - 10em);
+  height: 75%;
+  border: red;
+  border-width: 1px;
+  border-style: solid
 }
 
 textarea {
-  font-size: 1.25em;
+  font-size: 20px;
   height: 100%;
   width: 98%;
-  margin: 3px;
+  margin: 4px;
   resize: none;
-  padding: .1em;
+  border: blue;
+  border-width: 1px;
+  border-style: solid
 }
 
 .form-group {
   display: flex;
   align-items: center;
-  padding-left: .4em;
-  padding-right: .4em;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .bordered {
@@ -46,8 +51,8 @@ textarea#input-text {
 button {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
-  padding: .375rem .75rem;
-  border-radius: .25rem;
+  padding: 4px 8px;
+  border-radius: 4px;
   transition: color .15s;
 }
 
@@ -64,8 +69,7 @@ button:hover {
 
   .textarea-container div {
     width: 100%;
-    margin: .1em;
-    height: calc(100% - 26em);
+    height: 35%;
   }
 
   button {
