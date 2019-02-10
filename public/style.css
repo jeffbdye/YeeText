@@ -12,9 +12,6 @@
 .textarea-container div {
   flex: 1;
   height: 75%;
-  border: red;
-  border-width: 1px;
-  border-style: solid
 }
 
 textarea {
@@ -23,9 +20,6 @@ textarea {
   width: 98%;
   margin: 4px;
   resize: none;
-  border: blue;
-  border-width: 1px;
-  border-style: solid
 }
 
 .form-group {
