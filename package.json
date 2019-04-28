@@ -6,8 +6,8 @@
   "scripts": {
     "build:test": "tsc -p tsconfig.test.json",
     "test": "jasmine",
-    "build:deploy": "webpack",
-    "serve": "webpack-dev-server"
+    "build:deploy": "webpack --config webpack-build.config.js",
+    "serve": "webpack-dev-server --config webpack-serve.config.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
     "typescript": "3.1.6",
     "webpack": "4.29.0",
     "webpack-cli": "3.2.1",
-    "webpack-dev-server": "3.1.14"
+    "webpack-dev-server": "3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "copy-to-clipboard": "3.0.8"

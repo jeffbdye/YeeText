@@ -24,11 +24,11 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="row">
     <h1>YeeText</h1>
   </div>
 
-  <div class="container">
+  <div class="row">
     <span class="form-group">
       <label for="yeet">👏</label>
       <input type="checkbox" id="yeet" checked onclick="optionToggled(event)" />
@@ -43,7 +43,7 @@
     </span>
   </div>
 
-  <div class="container textarea-container">
+  <div class="row textarea-container">
     <div>
       <textarea id="input-text" placeholder="Your text here" oninput="yeet(this.value)" id="input-text" rows="8"
         autofocus></textarea>
@@ -53,7 +53,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="row">
     <button id="copy" onclick="copyClicked()">Copy</button>
   </div>
 </body>

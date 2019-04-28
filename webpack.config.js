@@ -18,11 +18,5 @@ module.exports = {
     filename: 'bundle.js',
     path: path.join(__dirname, 'public'),
     libraryTarget: 'window'
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    compress: true,
-    port: 9000
-  },
-  mode: 'production'
+  }
 };

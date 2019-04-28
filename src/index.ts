@@ -41,9 +41,10 @@ function yeetThatText(text: string) {
 function validateForm(e: Event) {
   // enforce eclusive capitalization options, since these
   // are like radio buttons with an implied 'neither selected' option
-  if (e.srcElement.id === 'aLtErNaTiNg') {
+  const srcElement = e.srcElement as HTMLElement;
+  if (srcElement.id === 'aLtErNaTiNg') {
     jalenElement.checked = false;
-  } else if (e.srcElement.id === 'Jalen-Smith') {
+  } else if (srcElement.id === 'Jalen-Smith') {
     alertnatingElement.checked = false;
   }
 }
