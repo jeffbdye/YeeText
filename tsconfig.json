@@ -13,6 +13,8 @@
     "noImplicitAny": true
   },
   "exclude": [
-    "webpack.config.js"
+    "webpack.config.js",
+    "webpack-build.config.js",
+    "webpack-serve.config.js"
   ]
 }
