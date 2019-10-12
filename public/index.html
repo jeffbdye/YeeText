@@ -1,61 +1,61 @@
 <html>
 
-<head>
-  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-  <title>YeeText</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="module" src="./bundle.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <title>YeeText</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="module" src="./bundle.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-  <!-- feel free to adblock this :) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132859138-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- feel free to adblock this :) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132859138-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-    gtag('config', 'UA-132859138-1');
-  </script>
-</head>
+      gtag('config', 'UA-132859138-1');
+    </script>
+  </head>
 
-<body>
-  <div class="row">
-    <h1>YeeText</h1>
-  </div>
-
-  <div class="row">
-    <span class="form-group">
-      <label for="yeet">👏</label>
-      <input type="checkbox" id="yeet" checked onclick="optionToggled(event)" />
-    </span>
-    <span class="form-group">
-      <label for="aLtErNaTiNg">aLtErNaTiNg</label>
-      <input type="checkbox" id="aLtErNaTiNg" onclick="optionToggled(event)" />
-    </span>
-    <span class="form-group bordered">
-      <label for="Jalen-Smith">Jalen Smith</label>
-      <input type="checkbox" id="Jalen-Smith" onclick="optionToggled(event)" />
-    </span>
-  </div>
-
-  <div class="row textarea-container">
-    <div>
-      <textarea id="input-text" placeholder="Your text here" oninput="yeet(this.value)" id="input-text" rows="8"
-        autofocus></textarea>
+  <body>
+    <div class="row">
+      <h1>YeeText</h1>
     </div>
-    <div>
-      <textarea id="yeetext" placeholder="YeeText👏appears👏here" readonly rows="8"></textarea>
-    </div>
-  </div>
 
-  <div class="row">
-    <button id="copy" onclick="copyClicked()">Copy</button>
-  </div>
-</body>
+    <div class="row">
+      <span class="form-group">
+        <label for="yeet">👏</label>
+        <input type="checkbox" id="yeet" checked onclick="optionToggled(event)" />
+      </span>
+      <span class="form-group">
+        <label for="sPoNgEbOb">sPoNgEbOb</label>
+        <input type="checkbox" id="sPoNgEbOb" onclick="optionToggled(event)" />
+      </span>
+      <span class="form-group bordered">
+        <label for="Jalen-Smith">Jalen Smith</label>
+        <input type="checkbox" id="Jalen-Smith" onclick="optionToggled(event)" />
+      </span>
+    </div>
+
+    <div class="row textarea-container">
+      <div>
+        <textarea id="input-text" placeholder="Your text here" oninput="yeet(this.value)" id="input-text" rows="8"
+          autofocus></textarea>
+      </div>
+      <div>
+        <textarea id="yeetext" placeholder="YeeText👏appears👏here" readonly rows="8"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <button id="copy" onclick="copyClicked()">Copy</button>
+    </div>
+  </body>
 
 </html>
