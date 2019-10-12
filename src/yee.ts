@@ -10,7 +10,7 @@ function clap(text: string): string {
   return output;
 }
 
-function alternate(text: string): string {
+function spongebob(text: string): string {
   const chars = text.trim().split('');
   if (!chars.length) {
     return '';
@@ -44,4 +44,4 @@ function titleCase(text: string) {
   return output.slice(0, -1);
 }
 
-export { alternate, clap, titleCase };
+export { spongebob, clap, titleCase };

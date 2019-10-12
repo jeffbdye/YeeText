@@ -1,4 +1,4 @@
-import { alternate, clap, titleCase } from './yee';
+import { spongebob, clap, titleCase } from './yee';
 
 describe('YeeText', () => {
   it('should insert claps between words', () => {
@@ -11,7 +11,7 @@ describe('YeeText', () => {
   it('should alternate case', () => {
     const input = `Sarcastic spongebob`;
     const expected = `SaRcAsTiC sPoNgEbOb`;
-    const actual = alternate(input);
+    const actual = spongebob(input);
     expect(actual).toBe(expected);
   });
 
