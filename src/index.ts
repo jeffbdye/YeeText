@@ -5,7 +5,7 @@ const inputElement = document.getElementById('input-text') as HTMLTextAreaElemen
 const resultElement = document.getElementById('yeetext') as HTMLTextAreaElement;
 const yeetElement = document.getElementById('yeet') as HTMLInputElement;
 const spongebobElement = document.getElementById('sPoNgEbOb') as HTMLInputElement;
-const jalenElement = document.getElementById('Jalen-Smith') as HTMLInputElement;
+const jadenElement = document.getElementById('Jaden-Smith') as HTMLInputElement;
 const copyButton = document.getElementById('copy') as HTMLButtonElement;
 
 function yeet(value: string) {
@@ -20,18 +20,18 @@ function optionToggled(e: Event) {
 function yeetThatText(text: string) {
   const yeetSelected = yeetElement.checked;
   const spongebobSelected = spongebobElement.checked;
-  const jalenSelected = jalenElement.checked;
+  const jadenSelected = jadenElement.checked;
 
   // ugh
   if (spongebobSelected && yeetSelected) {
     return clap(spongebob(text));
-  } else if (jalenSelected && yeetSelected) {
+  } else if (jadenSelected && yeetSelected) {
     return clap(titleCase(text));
   } else if (yeetSelected) {
     return clap(text);
   } else if (spongebobSelected) {
     return spongebob(text);
-  } else if (jalenSelected) {
+  } else if (jadenSelected) {
     return titleCase(text);
   } else {
     return text;
@@ -43,8 +43,8 @@ function validateForm(e: Event) {
   // are like radio buttons with an implied 'neither selected' option
   const srcElement = e.srcElement as HTMLElement;
   if (srcElement.id === 'sPoNgEbOb') {
-    jalenElement.checked = false;
-  } else if (srcElement.id === 'Jalen-Smith') {
+    jadenElement.checked = false;
+  } else if (srcElement.id === 'JadÍÍen-Smith') {
     spongebobElement.checked = false;
   }
 }

@@ -58,6 +58,10 @@ button:hover {
   border-color: #dae0e5;
 }
 
+.sr-only {
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   .textarea-container {
     flex-direction: column;
