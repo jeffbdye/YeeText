@@ -44,7 +44,7 @@ function validateForm(e: Event) {
   const srcElement = e.srcElement as HTMLElement;
   if (srcElement.id === 'sPoNgEbOb') {
     jadenElement.checked = false;
-  } else if (srcElement.id === 'JadÍÍen-Smith') {
+  } else if (srcElement.id === 'Jaden-Smith') {
     spongebobElement.checked = false;
   }
 }
