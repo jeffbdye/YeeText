@@ -1,77 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-    <title>YeeText</title>
-    <meta name="description" content="Yeet styling for your text, easily shared with your friends! Hit👏me👏up👏with👏that👏text">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="module" src="./bundle.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+  <title>YeeText</title>
+  <meta name="description"
+    content="Yeet styling for your text, easily shared with your friends! Hit👏me👏up👏with👏that👏text">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="module" src="./bundle.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-    <!-- feel free to adblock this :) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132859138-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+  <!-- feel free to adblock this :) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132859138-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-132859138-1');
-    </script>
-  </head>
+    gtag('config', 'UA-132859138-1');
+  </script>
+</head>
 
-  <body>
-    <div class="row">
-      <h1>YeeText</h1>
-    </div>
+<body>
+  <div class="row">
+    <h1>YeeText</h1>
+  </div>
 
-    <div class="row">
-      <span class="form-group">
-        <label for="yeet">👏</label>
-        <input type="checkbox" id="yeet" checked onclick="optionToggled(event)" aria-describedby="yeet-option"/>
-        <span id="yeet-option" class="sr-only">
-          Replaces all spaces in the provided text with the 👏 emoji.
-        </span>
+  <div class="row">
+    <span class="form-group">
+      <label for="yeet">👏</label>
+      <input type="checkbox" id="yeet" checked onclick="optionToggled(event)" aria-describedby="yeet-option" />
+      <span id="yeet-option" class="sr-only">
+        Replaces all spaces in the provided text with the 👏 emoji.
       </span>
-      <span class="form-group">
-        <label for="sPoNgEbOb">sPoNgEbOb</label>
-        <input type="checkbox" id="sPoNgEbOb" onclick="optionToggled(event)" aria-describedby="spongebob-option"/>
-        <span id="spongebob-option" class="sr-only">
-          Alternates the case of every character of the provided text. 
-          Alternation depends on the case of the first character.
-          Can be used with the yeet option.
-        </span>
+    </span>
+    <span class="form-group">
+      <label for="sPoNgEbOb">sPoNgEbOb</label>
+      <input type="checkbox" id="sPoNgEbOb" onclick="optionToggled(event)" aria-describedby="spongebob-option" />
+      <span id="spongebob-option" class="sr-only">
+        Alternates the case of every character of the provided text.
+        Alternation depends on the case of the first character.
+        Can be used with the yeet option.
       </span>
-      <span class="form-group bordered">
-        <label for="Jaden-Smith">Jaden Smith</label>
-        <input type="checkbox" id="Jaden-Smith" onclick="optionToggled(event)" aria-describedby="jaden-option"/>
-        <span id="jaden-option" class="sr-only">
-          Uppercases the first letter of every word in the sentence.
-          Can be used with the yeet option.
-        </span>
+    </span>
+    <span class="form-group bordered">
+      <label for="Jaden-Smith">Jaden Smith</label>
+      <input type="checkbox" id="Jaden-Smith" onclick="optionToggled(event)" aria-describedby="jaden-option" />
+      <span id="jaden-option" class="sr-only">
+        Uppercases the first letter of every word in the sentence.
+        Can be used with the yeet option.
       </span>
-    </div>
+    </span>
+  </div>
 
-    <div class="row textarea-container">
-      <div>
-        <textarea id="input-text" placeholder="Your text here" oninput="yeet(this.value)" id="input-text" rows="8"
-          autofocus aria-labelledby="input-label"></textarea>
-        <label id="input-label" class="sr-only" for="input-text">Input text to which styles will be applied.</label>
-      </div>
-      <div>
-        <textarea id="yeetext" placeholder="YeeText👏appears👏here" readonly rows="8" aria-labelledby="yeetext-label"></textarea>
-        <label id="yeetext-label" class="sr-only" for="yeetext">Resulting styled text.</label>
-      </div>
+  <div class="textarea-container row">
+    <div>
+      <textarea id="input-text" placeholder="Your text here" oninput="yeet(this.value)" id="input-text" rows="8"
+        autofocus aria-labelledby="input-label"></textarea>
+      <label id="input-label" class="sr-only" for="input-text">Input text to which styles will be applied.</label>
     </div>
+    <div>
+      <textarea id="yeetext" placeholder="YeeText👏appears👏here" readonly rows="8"
+        aria-labelledby="yeetext-label"></textarea>
+      <label id="yeetext-label" class="sr-only" for="yeetext">Resulting styled text.</label>
+    </div>
+  </div>
 
-    <div class="row">
-      <button id="copy" onclick="copyClicked()">Copy</button>
-      <label for="copy" class="sr-only">Copies the styled text to clipboard.</label>
-    </div>
-  </body>
+  <div class="row">
+    <button id="copy" onclick="copyClicked()">Copy</button>
+    <label for="copy" class="sr-only">Copies the styled text to clipboard.</label>
+  </div>
+</body>
 
 </html>
