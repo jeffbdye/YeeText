@@ -2,3 +2,4 @@
 node_modules
 npm-debug.log
 spec/.working
+/public/bundle.js
