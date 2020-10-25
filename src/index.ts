@@ -8,16 +8,20 @@ const spongebobElement = document.getElementById('sPoNgEbOb') as HTMLInputElemen
 const jadenElement = document.getElementById('Jaden-Smith') as HTMLInputElement;
 const copyButton = document.getElementById('copy') as HTMLButtonElement;
 
-function yeet(value: string) {
+function yeetOnInput(value: string) {
   resultElement.innerHTML = yeetThatText(value);
 }
 
 function optionToggled(e: Event) {
   validateForm(e);
-  yeet(inputElement.value);
+  yeetOnInput(inputElement.value);
 }
 
-function yeetThatText(text: string) {
+function yeetThatText(text: string): string {
+  if (!text) {
+    return text;
+  }
+
   const yeetSelected = yeetElement.checked;
   const spongebobSelected = spongebobElement.checked;
   const jadenSelected = jadenElement.checked;
@@ -41,7 +45,7 @@ function yeetThatText(text: string) {
 function validateForm(e: Event) {
   // enforce eclusive capitalization options, since these
   // are like radio buttons with an implied 'neither selected' option
-  const srcElement = e.srcElement as HTMLElement;
+  const srcElement = e.target as HTMLElement;
   if (srcElement.id === 'sPoNgEbOb') {
     jadenElement.checked = false;
   } else if (srcElement.id === 'Jaden-Smith') {
@@ -54,4 +58,4 @@ function copyClicked() {
   copyButton.innerText = 'Copied!';
 }
 
-export { yeet, copyClicked, optionToggled };
+export { yeetOnInput, copyClicked, optionToggled };
