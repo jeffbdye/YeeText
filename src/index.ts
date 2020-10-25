@@ -45,7 +45,7 @@ function yeetThatText(text: string): string {
 function validateForm(e: Event) {
   // enforce eclusive capitalization options, since these
   // are like radio buttons with an implied 'neither selected' option
-  const srcElement = e.srcElement as HTMLElement;
+  const srcElement = e.target as HTMLElement;
   if (srcElement.id === 'sPoNgEbOb') {
     jadenElement.checked = false;
   } else if (srcElement.id === 'Jaden-Smith') {
@@ -58,4 +58,4 @@ function copyClicked() {
   copyButton.innerText = 'Copied!';
 }
 
-export { yeetOnInput as yeet, copyClicked, optionToggled };
+export { yeetOnInput, copyClicked, optionToggled };
