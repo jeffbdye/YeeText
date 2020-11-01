@@ -24,8 +24,10 @@ body {
 }
 
 textarea {
+  display: block;
   font-size: 20px;
-  margin: 4px;
+  margin-left: auto;
+  margin-right: auto;
   height: inherit;
   width: inherit;
   resize: none;
