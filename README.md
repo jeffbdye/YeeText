@@ -1,6 +1,6 @@
 # YeeText
 
-[![Master build badge](https://github.com/jeffbdye/YeeText/workflows/master/badge.svg)](https://github.com/jeffbdye/YeeText/actions?query=workflow%3Amaster) - [definition](https://github.com/jeffbdye/YeeText/blob/master/.github/workflows/master.yml)
+[![Main build badge](https://github.com/jeffbdye/YeeText/workflows/main/badge.svg)](https://github.com/jeffbdye/YeeText/actions?query=workflow%main) - [definition](https://github.com/jeffbdye/YeeText/blob/main/.github/workflows/main.yml)
 
 ## About
 
