@@ -2,7 +2,7 @@ name: PR
 
 on:
   pull_request:
-    branches: [ maain ]
+    branches: [ main ]
 
 jobs:
   test:
