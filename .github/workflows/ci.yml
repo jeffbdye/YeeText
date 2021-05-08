@@ -2,7 +2,7 @@ name: PR
 
 on:
   pull_request:
-    branches: [ maain ]
+    branches: [ main ]
 
 jobs:
   test:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Setup node
-      uses: actions/setup-node@v1.1.0
+      uses: actions/setup-node@v2
 
     - name: Checkout code
       uses: actions/checkout@v2
