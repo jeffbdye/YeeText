@@ -54,6 +54,9 @@ function validateForm(e: Event) {
 }
 
 function copyClicked() {
+  if (!resultElement.textContent) {
+    return;
+  }
   copy(resultElement.textContent);
   copyButton.innerText = 'Copied!';
 }

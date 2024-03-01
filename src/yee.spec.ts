@@ -15,7 +15,7 @@ describe('YeeText', () => {
     expect(actual).toBe(expected);
   });
 
-  it('should title case text', () =>{
+  it('should title case text', () => {
     const input = `real eyes REALIZE Real Lies`;
     const expected = `Real Eyes Realize Real Lies`;
     const actual = titleCase(input);
