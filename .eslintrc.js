@@ -30,6 +30,6 @@ module.exports = {
       "@typescript-eslint/strict-boolean-expressions": "off",
       "@typescript-eslint/quotes": "off",
     },
-    "ignorePatterns": [".eslintrc.js"]
+    "ignorePatterns": [".eslintrc.js", "webpack-*.config.js"]
     }
   
