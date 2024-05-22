@@ -13,3 +13,7 @@ Special thanks to Andrew Rowe for the inspiration!
 - Clone the repo
 - `npm i` to install dependencies.
 - `npm run serve` to begin serving on port 3500.
+
+## Deployment
+
+- https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html
