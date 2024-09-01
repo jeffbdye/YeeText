@@ -19,6 +19,9 @@
     "url": "https://github.com/jeffbdye/YeeText/issues"
   },
   "homepage": "https://github.com/jeffbdye/YeeText#readme",
+  "dependencies": {
+    "copy-to-clipboard": "3.3.3"
+  },
   "devDependencies": {
     "@types/jasmine": "5.1.4",
     "@types/node": "20.11.22",
@@ -35,8 +38,5 @@
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "5.0.4",
     "webpack-merge": "6.0.1"
-  },
-  "dependencies": {
-    "copy-to-clipboard": "3.2.0"
   }
 }
