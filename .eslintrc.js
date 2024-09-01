@@ -28,6 +28,7 @@ module.exports = {
       "@typescript-eslint/explicit-function-return-type": "off",
       "object-property-newline": "off",
       "@typescript-eslint/strict-boolean-expressions": "off",
+      "@typescript-eslint/quotes": "off",
     },
     "ignorePatterns": [".eslintrc.js", "webpack-*.config.js"]
     }
