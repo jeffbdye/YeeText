@@ -5,7 +5,7 @@ module.exports = merge(common, {
   devServer: {
     static: './public',
     compress: true,
-    port: 3500
+    port: 3000
   },
   devtool: 'source-map',
   mode: 'development'
